@@ -48,7 +48,7 @@ export default function WaitlistSection() {
               </FadeIn>
               <FadeIn delay={120}>
                 <p className="text-sm leading-relaxed mb-8 opacity-60 text-white">
-                  Schrijf je in voor de wachtrij en word als eerste uitgenodigd voor de testfase van Al-Qari. Jouw naam en e-mailadres zijn voldoende — we nemen contact op wanneer de app klaar is.
+                  Schrijf je in voor de wachtrij en word als eerste uitgenodigd voor de testfase van Al-Qari. Jouw naam en e-mailadres zijn voldoende we nemen contact op wanneer de app klaar is.
                 </p>
               </FadeIn>
               <FadeIn delay={160}>

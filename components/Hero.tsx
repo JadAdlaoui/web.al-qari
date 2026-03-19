@@ -49,7 +49,7 @@ export default function Hero() {
           <FadeIn delay={150}>
             <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)', maxWidth: 420 }}>
               Al-Qari helpt moslims bij het oefenen, begrijpen en verbeteren van hun Qur'an-recitatie.
-              Reciteer, ontvang feedback, herken soerahs en volg je voortgang — allemaal in één app.
+              Reciteer, ontvang feedback, herken soerahs en volg je voortgang allemaal in één app.
             </p>
           </FadeIn>
 
