@@ -20,10 +20,10 @@ export async function appendEntry(naam: string, email: string, telefoon: string)
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: 'Wachtrij!A:E',
+    range: 'Wachtrij!B:E',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[undefined, now, naam, email, telefoon]],
+      values: [[now, naam, email, telefoon]],
     },
   });
 }
