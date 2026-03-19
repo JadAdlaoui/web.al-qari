@@ -53,5 +53,5 @@ export async function getCount(): Promise<number> {
   });
 
   const rows = res.data.values ?? [];
-  return Math.max(0, rows.length - 1); // minus header row
+  return rows.length;
 }
