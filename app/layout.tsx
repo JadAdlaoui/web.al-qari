@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     'Al-Qari is een AI-gestuurde Quran recitatie app die je helpt je tajweed en uitspraak te verbeteren. Word als eerste uitgenodigd.',
   openGraph: {
-    title: 'Al-Qari — القارئ | Verbeter je Quran recitatie met AI',
+    title: 'Al-Qari — القارئ ',
     description: 'AI-gestuurde Quran recitatie met real-time tajweed feedback.',
     type: 'website',
   },
