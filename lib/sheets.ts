@@ -13,6 +13,20 @@ export async function appendEntry(naam: string, email: string, telefoon: string)
   const sheets = google.sheets({ version: 'v4', auth });
   const spreadsheetId = process.env.GOOGLE_SHEET_ID!;
 
+  // Haal laatste volgnummer op uit kolom A
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId,
+    range: 'Wachtrij!A:A',
+  });
+  const rows = res.data.values ?? [];
+  // Zoek het hoogste nummer (sla header over)
+  let lastNum = 0;
+  for (let i = 1; i < rows.length; i++) {
+    const n = parseInt(rows[i]?.[0], 10);
+    if (!isNaN(n) && n > lastNum) lastNum = n;
+  }
+  const nextNum = lastNum + 1;
+
   const now = new Date().toLocaleString('nl-NL', {
     day: '2-digit', month: '2-digit', year: 'numeric',
     hour: '2-digit', minute: '2-digit',
@@ -20,10 +34,10 @@ export async function appendEntry(naam: string, email: string, telefoon: string)
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: 'Wachtrij!B:E',
+    range: 'Wachtrij!A:E',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
-      values: [[now, naam, email, telefoon]],
+      values: [[nextNum, now, naam, email, telefoon]],
     },
   });
 }
