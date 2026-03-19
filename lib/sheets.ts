@@ -49,7 +49,7 @@ export async function getCount(): Promise<number> {
 
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Wachtrij!A:A',
+    range: 'Wachtrij!D:D',
   });
 
   const rows = res.data.values ?? [];
