@@ -20,22 +20,22 @@ export default function Header() {
         boxShadow: scrolled ? '0 2px 20px rgba(12,59,46,0.08)' : 'none',
       }}
     >
-      <nav className="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
+      <nav className="max-w-5xl mx-auto px-5 h-20 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3" aria-label="Al-Qari home">
           <img
-            src="/logo white.png"
+            src="/logo white2.png"
             alt="Al-Qari logo"
-            className="h-10 w-auto"
+            className="h-16 w-auto"
           />
           <div className="flex flex-col leading-none">
             <span
-              className="text-lg font-bold"
+              className="text-2xl font-bold"
               style={{ color: 'var(--gold)', fontFamily: 'Georgia, serif', direction: 'rtl' }}
               lang="ar"
             >
               القارئ
             </span>
-            <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--primary)' }}>
+            <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: 'var(--primary)' }}>
               Al-Qari
             </span>
           </div>

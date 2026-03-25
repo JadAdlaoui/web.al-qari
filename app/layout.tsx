@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   description:
     'Al-Qari is een AI-gestuurde Quran recitatie app die je helpt je tajweed en uitspraak te verbeteren. Word als eerste uitgenodigd.',
   icons: {
-    icon: '/logo white.png',
+    icon: { url: '/logo patroon.png', sizes: '192x192' },
+    apple: { url: '/logo patroon.png', sizes: '180x180' },
   },
   openGraph: {
     title: 'Al-Qari — القارئ ',
