@@ -22,6 +22,11 @@ export default function Header() {
     >
       <nav className="max-w-5xl mx-auto px-5 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3" aria-label="Al-Qari home">
+          <img
+            src="/logo white.png"
+            alt="Al-Qari logo"
+            className="h-10 w-auto"
+          />
           <div className="flex flex-col leading-none">
             <span
               className="text-lg font-bold"
